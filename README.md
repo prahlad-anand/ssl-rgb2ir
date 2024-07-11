@@ -22,6 +22,8 @@ IROS 2024
 
 ## About
 
+<img style="width:100%" src="arch.png">
+
 The scarcity of annotated infrared (IR) image datasets limits deep learning networks from achieving per- formances comparable to those achieved with RGB data. To address this, we introduce a novel semi-supervised RGB- to-IR Image-to-Image Translation model (SSL-RGB2IR) that generates synthetic IR data from RGB images. Our model effectively preserves the IR characteristics in the generated images from both synthetic and real-world data. Compared to existing image-to-image translation techniques, training models on this generated IR data significantly improves performance in downstream tasks like segmentation and detection. Notably, in sim-to-real transfer, the segmentation model trained on SSL-RGB2IR generated IR images outperforms baselines and other Image-to-Image (I2I) models. Furthermore, for real-world applications utilizing EO/IR fusion images, this approach solves the well-known challenge of co-registering EO and IR images, which often have inherent misalignment’s due to differing sensor characteristics.
 
 ## Setup
