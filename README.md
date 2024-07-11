@@ -5,7 +5,7 @@ This repository provides code for our paper:
 [SSL-RGB2IR: Semi-supervised RGB-to-IR Image-to-Image Translation for Enhancing Vision Task Training in Semantic Segmentation and Object Detection
 ](link)
 
-[Aniruddh Sikdar](https://www.linkedin.com/in/aniruddh-sikdar-723112b8/), [Qiranul Saadiyean*](https://www.linkedin.com/in/qsaddy/), [Prahlad Anand](https://www.linkedin.com/in/prahlad-anand), [Suresh Sundaram](https://aero.iisc.ac.in/people/suresh-sundaram/)
+[Aniruddh Sikdar](https://www.linkedin.com/in/aniruddh-sikdar-723112b8/), [Qiranul Saadiyean](https://www.linkedin.com/in/qsaddy/), [Prahlad Anand](https://www.linkedin.com/in/prahlad-anand), [Suresh Sundaram](https://aero.iisc.ac.in/people/suresh-sundaram/)
 
 IROS 2024
 
