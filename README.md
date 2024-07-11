@@ -1,4 +1,4 @@
-# PASTA
+# SSL-RGB2IR
 
 This repository provides code for our paper:
  
