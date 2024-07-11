@@ -13,10 +13,10 @@ IROS 2024
 
 <div class="toc">
 <ul>
-<li><a href="#-ssl-rgb2ir">About</a></li>
-<li><a href="#-setup">Setup</a></li>
-<li><a href="#-experiments">Experiments</a></li>
-<li><a href="#-checkpoints">Checkpoints</a></li>
+<li><a href="#ssl-rgb2ir">About</a></li>
+<li><a href="#setup">Setup</a></li>
+<li><a href="#experiments">Experiments</a></li>
+<li><a href="#checkpoints">Checkpoints</a></li>
 </ul>
 </div>
 
