@@ -65,11 +65,6 @@ python train.py --name experiment_name  --CUT_mode CUT --model semi_cut --dataro
 
 [Coming Soon]
 
-## Contributors
-
-* [Prithvijit Chattopadhyay](https://github.com/prithv1)
-* [Kartik Sarangmath](https://github.com/ksarangmath)
-* [Vivek Vijaykumar](https://github.com/vivekvjk)
 
 ## Cite
 
