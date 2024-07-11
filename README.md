@@ -29,7 +29,7 @@ The scarcity of annotated infrared (IR) image datasets limits deep learning netw
 1. First download and setup [Anaconda](https://docs.anaconda.com/anaconda/install/linux/) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html).
 2. Create and activate a conda (anaconda / miniconda) environment
 ```
-conda create -n ssl-rgb2ir -f environment.yaml
+conda create -n ssl-rgb2ir -f environment.yml
 conda activate ssl-rgb2ir
 ```
 
