@@ -70,7 +70,7 @@ python train.py --name experiment_name  --CUT_mode CUT --model semi_cut --dataro
 
 Please cite our work if you find it useful:
 ```
-@inproceedings{2023iccv_PASTA, 
+@inproceedings{2023iROS_SSL-RGB2IR, 
     author = {Sikdar, Aniruddh and Saadiyean, Qiranul and Anand, Prahlad and Sundaram, Suresh},
     title = {SSL-RGB2IR: Semi-supervised RGB-to-IR Image-to-Image Translation for Enhancing Vision Task Training in Semantic Segmentation and Object Detection},
     year = 2024,
