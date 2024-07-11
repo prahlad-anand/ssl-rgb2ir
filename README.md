@@ -61,7 +61,7 @@ python train.py --config configs/tir2rgb_folder_.yaml --output_path ./m3fd
 python train.py --name experiment_name  --CUT_mode CUT --model semi_cut --dataroot /path/to/imgs --paired_dataroot /path/to/imgs --checkpoints_dir ./pretrained_models --dce_idt --lambda_VGG -1  --lambda_NCE_s 0.05 --use_curriculum  --gpu_ids 0
 ```
 
-## 📊 Checkpoints
+## Checkpoints
 
 [Coming Soon]
 
