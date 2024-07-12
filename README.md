@@ -35,18 +35,28 @@ conda create -n ssl-rgb2ir -f environment.yml
 conda activate ssl-rgb2ir
 ```
 
-3. Download M3FD, MSRS and MVSS datasets and format as follows:
+3. Download M3FD, MSRS and MVSS datasets and format as given below. Do the same for generated pseudo pairs and provide the path as "paired_dataroot" for the suprevised network during training.
+```
+datasets/
+ dataset_name/
+  train_A/
+  train_B/
+  test_A/
+  test_B/
+```
 
 ## Experiments
+
+In both training and testing, the outputs of the pseudo-pair generation network are fed to the supervised network.
 
 #### Inferencing 
 
 1. Pseudo-pair generation network
 ```
-python3 inference_batch.py --input_folder /path/to/imgs --checkpoint /path/to/checkpoints/gen_00060000.pt --a2b 1 --seed 1 --num_style 1 --synchronized --output_only --config ./configs/tir2rgb_folder.yaml --output_folder /path/to/result
+python3 inference_initial.py --input_folder /path/to/imgs --checkpoint /path/to/checkpoints/gen_00060000.pt --a2b 1 --seed 1 --num_style 1 --synchronized --output_only --config ./configs/tir2rgb_folder.yaml --output_folder /path/to/result
 ```
 
-2. Secondary network
+2. Supervised network
 ```
 python test.py --dataroot /path/to/imgs --name experiment_name --CUT_mode CUT  --model cut --phase test --epoch latest --preprocess none
 ```
@@ -58,9 +68,9 @@ python test.py --dataroot /path/to/imgs --name experiment_name --CUT_mode CUT  -
 python train.py --config configs/tir2rgb_folder_.yaml --output_path ./m3fd
 ```
 
-2. Secondary network
+2. Supervised network
 ```
-python train.py --name experiment_name  --CUT_mode CUT --model semi_cut --dataroot /path/to/imgs --paired_dataroot /path/to/imgs --checkpoints_dir ./pretrained_models --dce_idt --lambda_VGG -1  --lambda_NCE_s 0.05 --use_curriculum  --gpu_ids 0
+python train.py --name experiment_name  --CUT_mode CUT --model semi_cut --dataroot /path/to/imgs --paired_dataroot /path/to/pseudo_paired_imgs --checkpoints_dir ./pretrained_models --dce_idt --lambda_VGG -1  --lambda_NCE_s 0.05 --use_curriculum  --gpu_ids 0
 ```
 
 ## Checkpoints
@@ -79,3 +89,6 @@ Please cite our work if you find it useful:
     booktitle = {IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}
 }
 ```
+
+## Acknowledgements
+Our code adapts that of [Scenimefy](https://github.com/Yuxinn-J/Scenimefy) and [sRGB-TIR](https://github.com/RPM-Robotics-Lab/sRGB-TIR). We thank the authors of the same for their contributions.
