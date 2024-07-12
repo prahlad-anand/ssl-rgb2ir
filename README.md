@@ -35,7 +35,7 @@ conda create -n ssl-rgb2ir -f environment.yml
 conda activate ssl-rgb2ir
 ```
 
-3. Download M3FD, MSRS and MVSS datasets and format as given below. Do the same for generated pseudo pairs and provide the path as "paired_dataroot" for the suprevised network during training.
+3. Download M3FD, MSRS and MVSS datasets and format as given below. Do the same for generated pseudo pairs and provide the path as "paired_dataroot" for the supervised network during training.
 ```
 datasets/
  dataset_name/
