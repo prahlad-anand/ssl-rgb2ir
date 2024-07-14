@@ -91,4 +91,4 @@ Please cite our work if you find it useful:
 ```
 
 ## Acknowledgements
-Our code adapts that of [Scenimefy](https://github.com/Yuxinn-J/Scenimefy) and [sRGB-TIR](https://github.com/RPM-Robotics-Lab/sRGB-TIR). We thank the authors of the same for their contributions.
+Our implementation is based on [Scenimefy](https://github.com/Yuxinn-J/Scenimefy) and [sRGB-TIR](https://github.com/RPM-Robotics-Lab/sRGB-TIR).
